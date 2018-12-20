@@ -74,21 +74,45 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>首先需要在GitHub上拥有一个个人的库</p>
+        <p>主要流程</p>
+<p>1.GitHub 注册和配置 </p>
+<p>2.搭建环境 </p>
+<p>3.安装配置 Hexo </p>
+<p>4,.关联 Hexo 与 GitHubPages</p>
+<p>Hexo 的简单操作—–建立新的文件并部署 </p>
+<p>1.库搭建</p>
+<p>首先需要在GitHub上拥有一个个人的库</p>
+<p>github的项目注册必须要遵守格式 如：账户名.github.io </p>
 <p>2.环境搭建</p>
 <p>2.1首先需要下载node和git</p>
 <ul>
-<li>Hexo:Hexo快速、简洁且高效的博客框架</li>
-<li>Node.js:建立在Chrome上的JavaScript运行引擎</li>
-<li>Git:一款免费、开源的分布式版本控制系统</li>
-<li>GitHub:国内一款面向开发者的云端开发平台，提供代码托管，运行空间，质量控制，项目管理等功能</li>
+<li>Hexo:（一个node内含的框架，专门用来搭建博客页面）Hexo快速、简洁且高效的博客框架</li>
+<li>Node.js:（一个运行环境）建立在Chrome上的JavaScript运行引擎，是一个<em>Javascript</em>运行环境 </li>
+<li>Git:（一个操作系统）一款免费、开源的分布式版本控制系统</li>
+<li>GitHub:（一个网络平台）国内一款面向开发者的云端开发平台，提供代码托管，运行空间，质量控制，项目管理等功能</li>
 </ul>
 <p>2.2</p>
+<p>通过node -v,  npm -v, git -version这些指令来查看安装的文件是否正常</p>
+<p>（正常：出现版本号）（注意：查看时注意操作环境，如果要在Windows环境下操作需要添加环境变量) </p>
+<p>在git bash中安装hexo框架 （npm install -g hexo ）</p>
+<p>npm是git中包含的一个模块</p>
+<p>输入hexo -v，检查hexo是否安装成功 </p>
+<p>输入hexo init，初始化该文件夹 （hexo初始化后会出现一大堆关键文件，注意它们的储存位置将会对日后有重大的帮助）</p>
+<p>输入npm install，安装所需要的组件 </p>
+<p>输入hexo g </p>
+<p>输入hexo s，开启服务器，访问该网址（ <a href="http://localhost:端口号/" target="_blank" rel="noopener">http://localhost:端口号/</a> ）端口号不一定</p>
+<p>可输入（hexo server -p 端口号 ） 来改变自己的端口号</p>
+<p>输入ctrl+c停止服务器 </p>
+<p>输入ssh-keygen -t rsa -C “邮箱地址” 来生成密匙，得到了两个文件：id_rsa和id_rsa.pub ，默认存储在（C:\Users\用户名\ .ssh ）</p>
+<p>id_rsa.pub 为公匙，将公匙添加在github账户中，就可以构成一个从个人到达github的路径</p>
+<p>设置Git的user name和email </p>
+<p>通过指令（git config –global users.name”用户名）添加用户||通过指令（git config –global users.email “邮箱地址”）添加邮箱</p>
+<p>配置Deployment，在其文件夹中，找到_config.yml文件，修改repo值 </p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/12/20/用hexo搭建博客/" data-id="cjpwiiyxh0002bsu5bwpddgj0" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/12/20/用hexo搭建博客/" data-id="cjpwkzcz30001x4u592kgeqfd" class="article-share-link">Share</a>
       
       
     </footer>
@@ -115,7 +139,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/12/19/first/" data-id="cjpwiiywp0000bsu5s8wmzlct" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/12/19/first/" data-id="cjpwkzcyo0000x4u5pl1ccxej" class="article-share-link">Share</a>
       
       
     </footer>
@@ -160,7 +184,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/12/19/hello-world/" data-id="cjpwiiywy0001bsu5to0cn0mz" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/12/19/hello-world/" data-id="cjpwkzcz70002x4u55j6hxm3q" class="article-share-link">Share</a>
       
       
     </footer>
